@@ -1,5 +1,6 @@
-import React, { Component } from 'react';
+import React from "react";
 import Header from './components/header/header.js';
+import Main from './pages/main/index.js'
 import './components/header/style.css'
 
 //extende o componente do react
@@ -11,6 +12,7 @@ import './components/header/style.css'
 const App = () => (
   <div className="App">
     <Header />
+    <Main />
   </div>
 )
 
