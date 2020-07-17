@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import api from '../../services/api'
+import './style.css';
 
 export default class Main extends Component {
   state = {
@@ -27,8 +28,11 @@ export default class Main extends Component {
             <a href=''>Acessar</a>
           </article>
         ))}
+        <div className='actions'>
+          <button>Anterior</button>
+          <button>Próxima</button>
+        </div>
       </div>
     )
   }
-
 }
