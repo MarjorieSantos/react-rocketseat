@@ -16,9 +16,10 @@ export default class Main extends Component {
   }
 
   render() {
+    const { products } = this.state
     return (
       <div className='product-list'>
-        {this.state.products.map(product => (
+        {products.map(product => (
           <article key={product._id}>
             <strong>{product.title}</strong>
             <p>{product.description}</p>
